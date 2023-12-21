@@ -50,7 +50,7 @@
         const response=await fetch(apiUrl + city + `&appid=${apiKey}`);
 
         if(response.status==404){
-            alert("Error");
+            alert("City Not Found");
         }
         else{
             var data=await response.json();
